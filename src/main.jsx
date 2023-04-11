@@ -4,6 +4,8 @@ import App from './App'
 import './index.css'
 import Home from './components/Home'
 import Statistics from './components/Statistics'
+import Blogs from './components/Blogs'
+import AppliedJobs from './components/AppliedJobs'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 
