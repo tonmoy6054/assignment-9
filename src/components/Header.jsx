@@ -7,20 +7,21 @@ import { Link,NavLink } from 'react-router-dom';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <div className='bg-gray-100 flex items-center justify-between'>
+        <div className='flex items-center justify-between m-5'>
 
             {/* logo */}
 <div className='inline-flex items-center'>
-    <BriefcaseIcon className='h-8 w-8 text-yellow-300'></BriefcaseIcon>
+    <BriefcaseIcon className='h-8 w-8 text-red-500'></BriefcaseIcon>
     <h1 className='font-bold text-4xl ml-2 tracking-wide'>Job Coach</h1>
     </div>
+    
             {/* nav item */}
 
             <ul className='items-center hidden space-x-8 lg:flex'>
           <li>
             <NavLink
               to='/'
-              className={({ isActive }) => (isActive ? 'active' : 'default')}
+              className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
             >
               Statistics
             </NavLink>
@@ -28,7 +29,7 @@ const Header = () => {
           <li>
             <NavLink
               to='/AppliedJobs'
-              className={({ isActive }) => (isActive ? 'active' : 'default')}
+              className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
             >
               Applied Jobs
             </NavLink>
@@ -36,12 +37,15 @@ const Header = () => {
           <li>
             <NavLink
               to='/Blogs'
-              className={({ isActive }) => (isActive ? 'active' : 'default')}
+              className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
             >
               Blogs
             </NavLink>
           </li>
         </ul>
+        <div  className='mt-20 text-align-center font-bold text-3xl'>
+        <button>Job Details</button></div>
+        
         {/* Mobile Navbar Section */}
         <div className='lg:hidden'>
           {/* Dropdown Open Button */}
@@ -52,10 +56,11 @@ const Header = () => {
           >
             <Bars3BottomRightIcon className='w-5 text-gray-600' />
           </button>
+          
           {isMenuOpen && (
             <div className='absolute top-0 left-0 w-full z-10'>
               <div className='p-5 bg-white border rounded shadow-sm'>
-                {/* Logo & Button section */}
+                {/* Logo & title */}
                 <div className='flex items-center justify-between mb-4'>
                   <div>
                     <Link to='/' className='inline-flex items-center'>
@@ -106,8 +111,10 @@ const Header = () => {
             </div>
           )}
         </div>
-      </div>   
+      </div> 
+     
     );
+    
 };
 
 export default Header;
