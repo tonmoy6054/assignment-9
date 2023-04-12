@@ -1,9 +1,12 @@
 import React from 'react'
 import Lottie from 'lottie-react'
+
 // import reader from '../assets/reader.json'
 import reader from '../assets/Reader.json'
 import { ShoppingCartIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom'
+
+// import Statistics from './Statistics'
 
 const Home = () => {
   return (
@@ -39,7 +42,13 @@ const Home = () => {
         </div>
       </div>
     </div>
+  
   )
+  
+
 }
+<div>
+ 
+</div>
 
 export default Home

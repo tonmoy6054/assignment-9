@@ -6,39 +6,44 @@ import Home from './components/Home'
 import Statistics from './components/Statistics'
 import Blogs from './components/Blogs'
 import AppliedJobs from './components/AppliedJobs'
+import Header from './components/Header'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import Catagory from './components/Catagory'
+import ErrorPage from './components/ErrorPage'
 
 
 const router = createBrowserRouter([{
 path: '/',
 element: <App></App>,
+errorElement: <ErrorPage></ErrorPage>,
 children: [{
-path: '/',
-element: <Home></Home>,
-},
-{
-path: '/statistics',
-element: <Statistics></Statistics>,
+  path: '/',
+  element: <Home></Home>,
+  },
+  {
+    path: '/',
+    element: <Catagory></Catagory>
+  },
+  {
+    path: 'Statistics',
+    element: <Statistics></Statistics>,
+  },
 
-},
 {
-path: '/blogs',
+path: 'Blogs',
 element: <Blogs></Blogs>,
 },
 
+
 {
-  path: '/applied jobs',
+  path: 'applied jobs',
   element: <AppliedJobs></AppliedJobs>,
 },
 
 
 ],
 },
-{
-path: '/about',
-element: <p>about page</p>,
 
-},
 ])
 
 

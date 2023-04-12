@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Blogs = () => {
     return (
         <div className='m-5'>
@@ -13,6 +14,8 @@ const Blogs = () => {
             <p>Ans: useMemo is a React Hook that helps us to cache the result of a calculation between re-renders.it is  used in the functional component of react that returns a memoized value.useMemo in React is essential react hook for improving the performance and speed of our application by caching the output. </p>
         </div>
     );
+    
 };
+
 
 export default Blogs;

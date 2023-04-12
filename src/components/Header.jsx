@@ -18,9 +18,22 @@ const Header = () => {
             {/* nav item */}
 
             <ul className='items-center hidden space-x-8 lg:flex'>
-          <li>
-            <NavLink
+            <li>
+         <NavLink
               to='/'
+              className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
+            >
+              Home
+            </NavLink>
+          </li>
+
+
+
+
+
+          <li>
+         <NavLink
+              to='/Statistics'
               className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
             >
               Statistics
@@ -85,7 +98,7 @@ const Header = () => {
                 <nav>
                   <ul className='space-y-4'>
                     <li>
-                      <Link to='/' className='default'>
+                      <Link to='/Statistics' className='default'>
                         Statistics
                       </Link>
                     </li>
