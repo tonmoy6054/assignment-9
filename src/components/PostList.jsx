@@ -13,7 +13,7 @@ const PostList = () => {
 
 
     return (
-        <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ml-5'>
+        <div className='grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 ml-5'>
             
       {posts.map(post => (
        <li key={post.id}>
@@ -35,7 +35,7 @@ Full Time
         </li>
         
       ))}
- <button className='bg-violate-500 font-bold text-3xl'>See All Jobs</button>
+ <button className='bg-violate-500 font-bold text-3xl mt-10 mb-5'>See All Jobs</button>
         </div>
     );
 };

@@ -11,7 +11,9 @@ const JobCard = () => {
 
 
   return (
-    <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 m-5'>
+    <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mb-10 ml-5 justify-center'>
+      <h1 className='text-3xl font-bold mt-5'>Job Catagory List</h1>
+      <p className='mt-10 mr-10 pr-10'>Here's some of the catagory of the job is given</p>
 {catagories.map(catagory => (
        <li key={catagory.id}>
             <img className='w-10 h-9' src="{catagory.logo}"></img>
