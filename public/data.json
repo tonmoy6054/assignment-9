@@ -1,0 +1,38 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "salary": "25k",
+        "logo": "/public/imgs/1a.png",
+        "title": "Database Engineer",
+        "address": "Dhaka,Bangladesh",
+        "body": "Google"
+        
+      },
+      {
+        "id": 2,
+        "salary": "25k",
+        "logo": "https://i.ibb.co/LxtDgJW/1d.png",
+        "title": "Senior Designer",
+        "body": "Netflix",
+        "address": "Chittagong,Bangladesh"
+      },
+      {
+        "id": 3,
+        "salary": "25k",
+        "logo": "https://i.ibb.co/9V2LJTc/1e.jpg",
+        "title": "Software Engineer",
+        "body": "Microsoft",
+        "address": "Barishal,Bangladesh"
+      },
+      {
+        "id": 4,
+        "salary": "25k",
+        "logo": "https://i.ibb.co/M5tqP0d/1b.png",
+        "title": "Senior Designer",
+        "body": "Tesla",
+        "address": "Comilla,Bangladesh"
+      }
+    ]
+  }
+  

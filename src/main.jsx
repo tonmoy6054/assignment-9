@@ -8,24 +8,32 @@ import Blogs from './components/Blogs'
 import AppliedJobs from './components/AppliedJobs'
 import Header from './components/Header'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Catagory from './components/Catagory'
 import ErrorPage from './components/ErrorPage'
+import Catagory from './components/Catagory'
 
 
 const router = createBrowserRouter([{
+
 path: '/',
 element: <App></App>,
 errorElement: <ErrorPage></ErrorPage>,
-children: [{
+children: [
+  {
   path: '/',
   element: <Home></Home>,
   },
   {
-    path: '/',
-    element: <Catagory></Catagory>
+  path: '/catagory',
+  element: <Catagory></Catagory>,
+ 
   },
+  
+
+
+
+
   {
-    path: 'Statistics',
+    path: '/Statistics',
     element: <Statistics></Statistics>,
   },
 
@@ -47,6 +55,9 @@ element: <Blogs></Blogs>,
 ])
 
 
-ReactDOM.createRoot(document.getElementById('root')).render(<RouterProvider router={router}></RouterProvider>
-  
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <>
+    <RouterProvider router={router} />
+    
+  </>
 )

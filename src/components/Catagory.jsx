@@ -1,44 +1,36 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+
 const Catagory = () => {
-const [jobs, setJobs] = useState([]);
-useEffect(() => {
+    const [jobs, setJobs] = useState([]);
+    useEffect(() => {
+        axios.get('/public/catagory.json')
+        .then(data => {
 
-axios.get('/public/Jobs.json')
-.then(data => {
-const loadedTwoData = data.data;
-// console.log(loadedTwoData);
-const jobsData = loadedTwoData.map(job =>{
-    const jobInfo = {
-        image: job.logo,
-        name: job.title,
-        jobs: job.job,
-    }
-    // console.log(jobInfo);
-    return jobInfo;
+            const loadedTwoData = data.data;
+            // console.log(loadedTwoData);
+const jobsData = loadedTwoData.map(singleJob => {
+    console.log(singleJob);
+const jobInfo = {
+    name: singleJob.title,
+    img: singleJob.logo,
+    jobs: singleJob.job
+}
+// console.log(jobInfo);
+return jobInfo;
+
 })
+setJobs(jobsData);
+// console.log(jobsData);
 
-console.log(jobsData);
-setJobs(jobsData)
 
-});
+        });       
 
 
 }, [])
 
-    return (
-        <div className='text-bold font-3xl m-10 align-item-center justify-center'>
-
-          <p>jobsData.job</p>
-          <img src="{jobsData.image}"></img>
-            
-            </div>
-       
-          
-          
-    
-    );
-};
+    return 
+} 
 
 export default Catagory;

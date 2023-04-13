@@ -6,23 +6,28 @@ import Header from './components/Header'
 import Home from './components/Home';
 import Statistics from './components/Statistics';
 import Catagory from './components/Catagory';
+import JobCard from './components/Cards/JobCard';
+import PostList from './components/PostList';
+
+
+
 
 const App = () => {
   return (
     <div>
       {/* header */}
-
-     
-      
      <Header></Header>
      <div className='min-h-[calc-(100vh-137px)]'>
+     <Catagory></Catagory>
+   
      <Outlet>
-     
-     </Outlet>
-
+  </Outlet>
+  <JobCard></JobCard>
+  <PostList></PostList>
+    
      </div>
-      
-      <Catagory></Catagory>
+     
+     
       {/* footer */}
     </div>
     

@@ -1,0 +1,36 @@
+{
+  "catagories": [
+    {
+      "id": 1,
+      
+      "logo": "/public/imgs/1a.png",
+      "title": "Account & Finance",
+      
+      "jobs": "30 jobs available"
+      
+    },
+    {
+      "id": 2,
+      
+      "logo": "https://i.ibb.co/LxtDgJW/1d.png",
+      "title": "Networking",
+      
+      "jobs": "20+ jobs available"
+    },
+    {
+      "id": 3,
+    
+      "logo": "https://i.ibb.co/9V2LJTc/1e.jpg",
+      "title": "Engineering job",
+      "jobs": "50 jobs available"
+    },
+    {
+      "id": 4,
+      
+      "logo": "https://i.ibb.co/M5tqP0d/1b.png",
+      "title": "Networking",
+      
+      "jobs": "100 jobs available"
+    }
+  ]
+}
