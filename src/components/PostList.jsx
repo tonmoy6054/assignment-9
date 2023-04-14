@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
 
-const PostList = () => {
+
+
+
+const PostList = ({handleClick}) => {
+
     const [posts, setPosts] = useState([]);
     useEffect(() => {
         fetch('/public/data.json')
@@ -29,7 +33,7 @@ Full Time
           <p>{post.body}</p>
           <p>{post.address}</p>
           <p>Salary: {post.salary}</p>
-          <button className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3">
+          <button onClick={()=> handleClick(id)} className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3">
       View Details
         </button>
         </li>

@@ -8,6 +8,7 @@ import Statistics from './components/Statistics';
 import Catagory from './components/Catagory';
 import JobCard from './components/Cards/JobCard';
 import PostList from './components/PostList';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -29,6 +30,7 @@ const App = () => {
      
      
       {/* footer */}
+      <Footer></Footer>
     </div>
     
   );

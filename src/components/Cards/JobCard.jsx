@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// import Catagory from '../Catagory';
 
 const JobCard = () => {
   
@@ -17,7 +18,7 @@ const JobCard = () => {
 {catagories.map(catagory => (
        <li key={catagory.id}>
             <img className='w-10 h-9' src="{catagory.logo}"></img>
-            <h2 className='font-bold text-2xl'>{catagory.title}</h2>
+            <h4 className='text-2xl'>{catagory.title}</h4>
             <p>{catagory.jobs}</p>
             </li>
 ))}
