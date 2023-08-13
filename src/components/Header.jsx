@@ -27,10 +27,6 @@ const Header = () => {
             </NavLink>
           </li>
 
-
-
-
-
           <li>
          <NavLink
               to='/Statistics'

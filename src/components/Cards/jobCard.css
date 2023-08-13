@@ -1,0 +1,67 @@
+/* JobCard.css */
+
+.job-card-container {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-card-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .job-card-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .job-catagories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .catagory-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .catagory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .catagory-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .catagory-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+  
+  .catagory-jobs {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .job-catagories {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  

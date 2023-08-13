@@ -12,7 +12,7 @@ import {
 const Statistics = () => {
     const [number, setNumber] = useState([]);
     useEffect(() => {
-        axios.get('/public/Marks.json')
+        axios.get('/Marks.json')
         .then(data => {
 const loadedData = data.data;
 // console.log(loadedData);

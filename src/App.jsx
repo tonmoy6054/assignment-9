@@ -1,39 +1,29 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Header from './components/Header'
+// import React from 'react';
+// import { Outlet } from 'react-router-dom';
+// import Header from './components/Header'
 // import Statistics from './components/Statistics';
+// import Catagory from './components/Catagory';
+// import JobCard from './components/Cards/JobCard';
+// import PostList from './components/PostList';
+// import Footer from './components/Footer/Footer';
+// import Home from './components/Home';
 
-import Home from './components/Home';
-import Statistics from './components/Statistics';
-import Catagory from './components/Catagory';
-import JobCard from './components/Cards/JobCard';
-import PostList from './components/PostList';
-import Footer from './components/Footer/Footer';
-
-
-
-
-const App = () => {
-  return (
-    <div>
-      {/* header */}
-     <Header></Header>
-     <div className='min-h-[calc-(100vh-137px)]'>
-     <Catagory></Catagory>
-   
-     <Outlet>
-  </Outlet>
-  <JobCard></JobCard>
-  <PostList></PostList>
-    
-     </div>
+// const App = () => {
+//   return (
+//     <div>
      
+//      <Header></Header>
+//      {/* <Home></Home> */}
+//      <Outlet></Outlet>
+//      <div className='min-h-[calc-(100vh-137px)]'>
      
-      {/* footer */}
-      <Footer></Footer>
-    </div>
     
-  );
-};
+//      </div>
+    
+//       <Footer></Footer>
+//     </div>
+    
+//   );
+// };
 
-export default App;
+// export default App;
