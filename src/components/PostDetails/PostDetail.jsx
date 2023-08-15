@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './PostDetail.css'
 import ToastMessage from './ToastMessage';
+import { ToastContainer } from 'react-toastify';
+
+
 const PostDetails = ({ posts }) => {
+  const [showAppliedJobs, setShowAppliedJobs] = useState(false);
   const { postId } = useParams();
   const selectedPost = posts.find(post => post.id.toString() === postId);
 
@@ -11,7 +15,11 @@ const PostDetails = ({ posts }) => {
   }
 
   const handleApplyClick = () => {
-    <ToastMessage></ToastMessage>
+    const appliedJobs = JSON.parse(localStorage.getItem('appliedJobs')) || [];
+  appliedJobs.push(selectedPost);
+  localStorage.setItem('appliedJobs', JSON.stringify(appliedJobs));
+    ToastMessage({ message: 'Applied successfully!' });
+    setShowAppliedJobs(true);
   }
 
   return (
@@ -30,7 +38,7 @@ const PostDetails = ({ posts }) => {
       <h3 className="post-details-section-title">contact info: </h3>
       <p className="post-details-section-content">{selectedPost.contact_info}</p>
       <button className="post-details-button" onClick={handleApplyClick}>Apply Now</button>
-
+      <ToastContainer position="bottom-right" autoClose={3000} />
     </div>
   );
 };

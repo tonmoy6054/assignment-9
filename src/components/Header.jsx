@@ -37,7 +37,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to='/AppliedJobs'
+              to='/applied-jobs'
               className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
             >
               Applied Jobs
