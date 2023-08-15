@@ -52,8 +52,25 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <div  className='mt-20 text-align-center font-bold text-3xl'>
-        <button>Job Details</button></div>
+        {/* <div  className='mt-20 text-align-center font-bold text-3xl'>
+        <button>Job Details</button></div> */}
+        <div className='mt-20 text-align-center font-bold text-3xl'>
+  <button
+    style={{
+      padding: '0.5rem 1rem',
+      background: 'linear-gradient(to right, #4CAF50, #2E8B57)',
+      color: 'white',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.2)',
+      transition: 'background 0.3s ease',
+    }}
+  >
+    Job Details
+  </button>
+</div>
+
         
         {/* Mobile Navbar Section */}
         <div className='lg:hidden'>

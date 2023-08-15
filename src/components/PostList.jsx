@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const PostList = ({ handleClick }) => {
-  const [posts, setPosts] = useState([]);
-  useEffect(() => {
-    fetch('/data.json')
-      .then(response => response.json())
-      .then(data => setPosts(data.posts));
-  }, []);
+
+
+const PostList = ({posts, navigateToDetails }) => {
+  
+  // const [posts, setPosts] = useState([]);
+  // useEffect(() => {
+  //   fetch('/data.json')
+  //     .then(response => response.json())
+  //     .then(data => setPosts(data.posts));
+  // }, []);
 
   return (
+    
     <div
       style={{
         display: 'grid',
@@ -21,10 +26,10 @@ const PostList = ({ handleClick }) => {
     >
       <div style={{ gridColumn: '1 / -1', textAlign: 'center' }}>
         <h2 style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '20px' }}>
-          Explore Job Categories
+          Featured jobs
         </h2>
         <p style={{ fontSize: '18px', color: '#777' }}>
-          Browse through a variety of job categories to find your ideal career path.
+        We know that finding the right professionals to work on your project is extremely important. The Featured Jobs option can help you find the talent that you need.
         </p>
       </div>
       {posts.map(post => (
@@ -47,6 +52,7 @@ const PostList = ({ handleClick }) => {
           <h2 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '10px' }}>
             {post.title}
           </h2>
+          
           <p style={{ color: '#777', marginBottom: '15px' }}>{post.body}</p>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <button
@@ -75,21 +81,25 @@ const PostList = ({ handleClick }) => {
             </button>
           </div>
           <p style={{ marginTop: '15px' }}>Salary: {post.salary}</p>
+          <p>{post.address}</p>
+
+         
           <button
-            onClick={handleClick}
-            style={{
-              backgroundColor: '#e53e3e',
-              color: 'white',
-              fontWeight: 'bold',
-              padding: '8px 16px',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              marginTop: '20px',
-              width: '100%',
-            }}
-          >
-            View Details
-          </button>
+  onClick={() => navigateToDetails(post.id)}
+  style={{
+    backgroundColor: '#e53e3e',
+    color: 'white',
+    fontWeight: 'bold',
+    padding: '8px 16px',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    marginTop: '20px',
+    width: '100%',
+  }}
+>
+  View Details
+</button>
+        
         </div>
       ))}
     </div>

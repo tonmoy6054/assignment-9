@@ -6,7 +6,13 @@
         "logo": "/public/imgs/twitter.png",
         "title": "Database Engineer",
         "address": "Dhaka,Bangladesh",
-        "body": "Google"
+        "body": "Google",
+        "job_description": "As a Google Ads specialist, your role would involve creating and managing Google Ads campaigns for businesses. Your responsibilities would include developing a Google Ads strategy, creating campaigns, monitoring campaigns, optimization, and reporting.",
+        "job_reponsibilities": "Manage all aspects of Google Ad campaigns. Create and optimize ad campaigns and paid search landing pages.Analyze and optimize ad campaigns to increase return on investment (ROI)",
+        "experience": "2 years",
+        "educational_requirements": "A broad, interdisciplinary background, with a strong understanding of computer science, is the key to any job in software engineering, at Google or elsewhere. Our Guide to Technical Development offers resources to help you develop your technical skills.",
+        "contact_info": "phone: 091234567, email: dhaiyya@ymail.com"
+       
         
       },
       {
@@ -15,7 +21,12 @@
         "logo": "https://i.ibb.co/LxtDgJW/1d.png",
         "title": "Senior Designer",
         "body": "Netflix",
-        "address": "Chittagong,Bangladesh"
+        "address": "Chittagong,Bangladesh",
+        "job_description": "As a Netflix Ads specialist, your role would involve creating and managing Netflix Ads campaigns for businesses. Your responsibilities would include developing a Google Ads strategy, creating campaigns, monitoring campaigns, optimization, and reporting.",
+        "job_reponsibilities": "Manage all aspects of Google Ad campaigns. Create and optimize ad campaigns and paid search landing pages.Analyze and optimize ad campaigns to increase return on investment (ROI)",
+        "experience": "2 years",
+        "educational_requirements": "A broad, interdisciplinary background, with a strong understanding of computer science, is the key to any job in software engineering, at Google or elsewhere. Our Guide to Technical Development offers resources to help you develop your technical skills.",
+        "contact_info": "phone: 091234567, email: dhaiyya@ymail.com"
       },
       {
         "id": 3,
@@ -23,7 +34,12 @@
         "logo": "https://i.ibb.co/9V2LJTc/1e.jpg",
         "title": "Software Engineer",
         "body": "Microsoft",
-        "address": "Barishal,Bangladesh"
+        "address": "Barishal,Bangladesh",
+        "job_description": "As an Software Engr, your role would involve creating and managing Software Engr. Ads campaigns for businesses. Your responsibilities would include developing a Google Ads strategy, creating campaigns, monitoring campaigns, optimization, and reporting.",
+        "job_reponsibilities": "Manage all aspects of Google Ad campaigns. Create and optimize ad campaigns and paid search landing pages.Analyze and optimize ad campaigns to increase return on investment (ROI)",
+        "experience": "2 years",
+        "educational_requirements": "A broad, interdisciplinary background, with a strong understanding of computer science, is the key to any job in software engineering, at Google or elsewhere. Our Guide to Technical Development offers resources to help you develop your technical skills.",
+        "contact_info": "phone: 091234567, email: dhaiyya@ymail.com"
       },
       {
         "id": 4,
@@ -31,7 +47,12 @@
         "logo": "https://i.ibb.co/M5tqP0d/1b.png",
         "title": "Senior Designer",
         "body": "Tesla",
-        "address": "Comilla,Bangladesh"
+        "address": "Comilla,Bangladesh",
+        "job_description": "As a senior designer, your role would involve creating and managing Netflix Ads campaigns for businesses. Your responsibilities would include developing a Google Ads strategy, creating campaigns, monitoring campaigns, optimization, and reporting.",
+        "job_reponsibilities": "Manage all aspects of Google Ad campaigns. Create and optimize ad campaigns and paid search landing pages.Analyze and optimize ad campaigns to increase return on investment (ROI)",
+        "experience": "2 years",
+        "educational_requirements": "A broad, interdisciplinary background, with a strong understanding of computer science, is the key to any job in software engineering, at Google or elsewhere. Our Guide to Technical Development offers resources to help you develop your technical skills.",
+        "contact_info": "phone: 091234567, email: dhaiyya@ymail.com"
       }
     ]
   }
